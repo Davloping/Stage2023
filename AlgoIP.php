@@ -36,7 +36,7 @@
     }
 
     function generateMask24(){
-        $range = array(128,192,224,248,252,254);
+        $range = array(128,192,224,240,248);
         shuffle($range);
         $octet4 = $range[0];
         $mask = "255.255.255.$octet4";
