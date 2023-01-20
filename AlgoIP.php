@@ -46,14 +46,14 @@
     function ClasseIp($ip){
         $octet = explode(".",$ip);
         if ($octet[0] > 0 && $octet[0] <= 127){
-            $class = "classe A";
+            $class = "A";
         }
         elseif($octet[0] >= 128 && $octet[0] <= 191){
-            $class = "classe B";
+            $class = "B";
         }
 
         elseif($octet[0] >= 192 && $octet[0] <= 223){
-            $class = "classe C";
+            $class = "C";
         }
         else{
             $class = "autre";
