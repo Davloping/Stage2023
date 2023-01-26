@@ -17,7 +17,7 @@
       
     echo'
       <div>
-      <form action="reponse1Verif.php" method="GET">
+      <form action="reponse1Verif.php" method="POST">
       <table class="table mx-auto">
         <thead>
           <tr> ';
@@ -56,8 +56,6 @@
       </form>'
      ;
         
-      
-        //echo $bonneRéponse;
         echo'
   
     </div>

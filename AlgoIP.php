@@ -189,4 +189,16 @@
     // echo "dernière addresse sous réseau : ".$derniereAdresse."<br><br>";
     $derniereAdresseDecimal = ipBinaryToDecimal($derniereAdresse);
     // echo "dernière addresse sous réseau décimal : ".$derniereAdresseDecimal."<br><br>";
+
+    $ip1 = generateIpC();
+    $ip2 = generateIpC();
+    $j = 0;
+    while($ip1 != $ip2){
+        $ip1 = generateIpC();
+        $ip2 = generateIpC();
+        $j++;
+    }
+    if($ip1 == $ip2){
+        echo $j;
+    }
 ?>

@@ -1,6 +1,11 @@
 <?php
  include 'AlgoIP.php';
- $reponse=$_GET['Question1'];
+ include 'class.php';
+
+//  $userTest = new Utilisateurs;
+//  $userTest->createUser("mamadou","mdppassisecure");
+
+//  $reponse=$_POST['Question1'];
  
 $classeReponse = ClasseIp($reponse);
 $ConsA='A';
@@ -41,13 +46,17 @@ $ConsA='A';
     </nav>';
 
     if ($classeReponse!= $ConsA){
-        echo '<div class="alert alert-danger" role="alert">
-        A simple danger alert—check it out!
+      echo '<div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
       </div>';
-    }else{
-    echo '<div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>';
+    }
+    else{
+      echo '<div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+      </div>';
+      // $userTest->showPts();
+      // $userTest->pointSupp();
+      // $userTest->showPts();
     }
   echo'
     </div>
