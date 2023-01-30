@@ -1,6 +1,6 @@
 <?php
     include 'AlgoIP.php';
-    include 'Navigation.php';
+    include 'navigation.php';
     $binaire1 = $_POST['binaire1'];
     $binaire2 = $_POST['binaire2'];
     $reponse = $_POST['question5a'];

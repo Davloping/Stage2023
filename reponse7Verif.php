@@ -1,13 +1,13 @@
 <?php
     include 'AlgoIP.php';
     include 'navigation.php';
-    $ip = $_POST['ip'];
-    $reponse = $_POST['question3a'];
+    $ipbin = $_POST['ipbinaire'];
+    $reponse = $_POST['question7'];
 
-    $ipbin = ipDecimalToBinary($ip);
+    $ipdec = ipBinaryToDecimal($ipbin)
 
 
-    if($reponse != $ipbin){
+    if($reponse != $ipdec){
         echo '<div class="alert alert-danger" role="alert">
         Mauvaise réponse !
       </div>';
@@ -21,4 +21,3 @@
     echo'<script src="/js/bootstrap.js"></script>
     </body>
     </html>';
-?>

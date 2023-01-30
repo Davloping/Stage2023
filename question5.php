@@ -1,6 +1,6 @@
 <?php 
     include 'AlgoIP.php';
-    include 'Navigation.php';
+    include 'navigation.php';
 
     $binaire1 = DecimalToBinary(rand(1,255));
     $binaire1 = str_pad($binaire1,8,"0",STR_PAD_LEFT);

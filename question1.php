@@ -1,6 +1,6 @@
 <?php
  include 'AlgoIP.php';
- include 'Navigation.php';
+ include 'navigation.php';
 
  echo'  
 

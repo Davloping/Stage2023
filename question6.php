@@ -6,16 +6,17 @@
     $mask = generateMask24();
     $ipbin = ipDecimalToBinary($ip);
     $maskbin = ipDecimalToBinary($mask);
+    $maskInversé = inverseMask($maskbin);
     $premiereAdresse = EtLogique($ipbin,$maskbin);
     $premiereAdresse = ipBinaryToDecimal($premiereAdresse);
-
-    echo'<form action="reponse2Verif.php" method="POST">';
-    echo "<h3>En fonction de l'adresse ip et le masque si dessous, donnez la première adresse disponible</h3><br>";
+    $broadcast = OuLogique(ipDecimalToBinary($premiereAdresse),$maskInversé);
+    $broadcast = ipBinaryToDecimal($broadcast);
+    echo'<form action="reponse6Verif.php" method="POST">';
+    echo "<h3>En fonction de l'adresse ip et le masque si dessous, donnez l'adresse de diffusion</h3><br>";
     echo $ip."<br>";
     echo '<input type="hidden" name="ip" value="'.$ip.'">';
     echo $mask."<br>";
     echo '<input type="hidden" name="mask" value="'.$mask.'">';
-    echo 'Première adresse : <input type="text" name="firstAdrr">'.$premiereAdresse.'<br>';
+    echo 'Adresse de diffusion : <input type="text" name="broadcast">'.$broadcast.'<br>';
     echo '<input type="submit" value="valider">';
     echo '</form>';
-?>

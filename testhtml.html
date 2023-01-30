@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,141 +8,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<body>
 
-<body style="background-image: url('images/background.webp')">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Exercices</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">CV en ligne</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse container" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="web.html">web</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="app.html">appication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="jeux.html">jeux</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="form.html">WIP
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link active" href="form_inscrip.html">WIP1
-                        <span class="visually-hidden">(current)</span>
-                    </a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+</div>
 
-    <div class="container-fluid mx-auto">
-        <div class="row">
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-            <!-- <div class="col-md-6 mx-5 my-5 px-5" style="background-color: lightgray;">
-                <div class="form-group pt-5">
-                    <fieldset disabled="">
-                    <label class="form-label" for="disabledInput">Disabled input</label>
-                    <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
-                    </fieldset>
-                </div>
-                
-                <div class="form-group">
-                    <fieldset>
-                    <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
-                    <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="">
-                    </fieldset>
-                </div>
-                
-                <div class="form-group has-success">
-                    <label class="form-label mt-4" for="inputValid">Valid input</label>
-                    <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
-                    <div class="valid-feedback">Success! You've done it.</div>
-                </div>
-                
-                <div class="form-group has-danger">
-                    <label class="form-label mt-4" for="inputInvalid">Invalid input</label>
-                    <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
-                    <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
-                </div>
-                
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Large input</label>
-                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
-                </div>
-                
-                <div class="form-group">
-                    <label class="col-form-label mt-4" for="inputDefault">Default input</label>
-                    <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
-                </div>
-                
-                <div class="form-group">
-                    <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Small input</label>
-                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label mt-4">Input addons</label>
-                    <div class="form-group">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">$</span>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
-                    </div>
-                </div>
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
-                <div class="form-group">
-                    <label class="form-label mt-4">Floating labels</label>
-                    <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">mot de passe</label>
-                    </div>
-                </div>
-
-            </div> -->
-
-            <div class="col-md-4 mx-auto my-5 px-5 pb-5 pt-3" style="background-color: black;">
-                _
-                <form action="test.php" method="post">
-                    <div class="form-group">
-                        <label class="form-label mt-4 mb-3">Test de formulaire</label>
-
-                        <div class="container-fluid form-group pb-3" style="background-color: lightgray;">
-                            <label class="col-form-label" for="inputDefault">Nom</label>
-                            <input type="text" class="form-control" placeholder="saisissez votre Nom" id="inputDefault" name="nom">
-                        </div>
-                        <br>
-                        <div class="container-fluid form-group pb-3" style="background-color: lightgray;">
-                            <label class="col-form-label" for="inputDefault">mot de passe</label>
-                            <input type="password" class="form-control" placeholder="saisissez votre mot de passe" id="inputDefault" name="mdp">
-                        </div>
-                        <input type="submit" name="submit">
-                        <input type="reset" name="reset">
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </div>
-
-    <script src="/js/bootstrap.js"></script>
 </body>
 </html>
