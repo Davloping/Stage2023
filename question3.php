@@ -23,4 +23,7 @@
     echo '<input type="hidden" name="ip" value="'.$ip.'">';
     echo '<input type="submit" value="valider">';
     echo '</form>';
+
+    echo'</body>
+    </html>';
 ?>

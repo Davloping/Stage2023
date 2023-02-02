@@ -15,14 +15,15 @@
         echo '<div class="alert alert-danger" role="alert">
         Mauvaise réponse pour la première adresse du réseau !
       </div>';
+      echo'<a href="question2.php" class="btn btn-dark">Retour</a>';
     }
     else{
         echo "<div class='alert alert-success' role='alert'>
         Bonne réponse pour la première adresse du réseau !
         </div>";
+        echo'<a href="question6.php" class="btn btn-success">question suivante</a>';
     }
 
-    echo'<script src="/js/bootstrap.js"></script>
-    </body>
+    echo'</body>
     </html>';
 ?>

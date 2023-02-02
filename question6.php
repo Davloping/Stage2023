@@ -13,10 +13,13 @@
     $broadcast = ipBinaryToDecimal($broadcast);
     echo'<form action="reponse6Verif.php" method="POST">';
     echo "<h3>En fonction de l'adresse ip et le masque si dessous, donnez l'adresse de diffusion</h3><br>";
-    echo $ip."<br>";
+    echo 'adresse IP : '.$ip."<br>";
     echo '<input type="hidden" name="ip" value="'.$ip.'">';
-    echo $mask."<br>";
+    echo 'masque : '.$mask."<br>";.
     echo '<input type="hidden" name="mask" value="'.$mask.'">';
-    echo 'Adresse de diffusion : <input type="text" name="broadcast">'.$broadcast.'<br>';
+    echo 'Adresse de diffusion : <input type="text" name="broadcast">';
     echo '<input type="submit" value="valider">';
     echo '</form>';
+
+    echo'</body>
+    </html>';

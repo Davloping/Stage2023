@@ -12,10 +12,12 @@
     $maskInversé = inverseMask($maskbin);
     $broadcast = OuLogique(ipDecimalToBinary($premiereAdresse),$maskInversé);
     $broadcast = ipBinaryToDecimal($broadcast);
+
     if($reponse2 != $broadcast){
       echo "<div class='alert alert-danger' role='alert'>
         Mauvaise réponse pour l'adresse de diffusion !
       </div>";
+      echo'<a href="question6.php" class="btn btn-dark">Retour</a>';
     }
     else{
       echo "<div class='alert alert-success' role='alert'>
@@ -23,7 +25,6 @@
         </div>";
     }
 
-    echo'<script src="/js/bootstrap.js"></script>
-    </body>
+    echo'</body>
     </html>';
 ?>

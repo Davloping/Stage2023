@@ -22,4 +22,7 @@
     echo '<input type="hidden" name="ipbinaire" value="'.$ipbinaire.'">';
     echo '<input type="submit" value="valider">';
     echo '</form>';
+
+    echo'</body>
+    </html>';
 ?>

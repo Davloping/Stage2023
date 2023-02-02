@@ -189,4 +189,6 @@
     // echo "dernière addresse sous réseau : ".$derniereAdresse."<br><br>";
     $derniereAdresseDecimal = ipBinaryToDecimal($derniereAdresse);
     // echo "dernière addresse sous réseau décimal : ".$derniereAdresseDecimal."<br><br>";
+
+    // echo ipDecimalToBinary("192.168.15.5");
 ?>

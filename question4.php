@@ -42,4 +42,7 @@
 
     echo '<input type="submit" value="valider">';
     echo '</form>';
+
+    echo'</body>
+    </html>';
 ?>

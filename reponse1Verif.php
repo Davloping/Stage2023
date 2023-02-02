@@ -16,18 +16,14 @@ $ConsA='A';
       echo '<div class="alert alert-danger" role="alert">
       A simple danger alert—check it out!
       </div>';
+      echo'<a href="question1.php" class="btn btn-dark">Retour</a>';
     }
     else{
       echo '<div class="alert alert-success" role="alert">
       A simple success alert—check it out!
       </div>';
-      $userTest->showPts();
-      echo "<br>";
-      $userTest->pointSupp();
-      $userTest->showPts();
+      echo'<a href="question3.php" class="btn btn-success">question suivante</a>';
     }
-  echo'
-    </div>
-  <script src="/js/bootstrap.js"></script>
-  </body>
-</html>';
+    
+  echo'</body>
+  </html>';
