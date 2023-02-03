@@ -27,3 +27,4 @@ $ConsA='A';
     
   echo'</body>
   </html>';
+?>

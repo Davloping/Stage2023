@@ -1,8 +1,11 @@
 <?php
-    include 'class.php';
+    $A = "a";
+    $B = "b";
+    $C = "c";
+    $D = "d";
 
-    $utilisateur = new Utilisateurs;
+    $abcd = [$A,$B,$C,$D];
+    $list = [];
+    
 
-    $utilisateur->createUser($_POST['nom'],$_POST['mdp']);
-    $utilisateur->showUser();
 ?>

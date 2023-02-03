@@ -23,6 +23,7 @@
       echo "<div class='alert alert-success' role='alert'>
         Bonne réponse pour l'adresse de diffusion !
         </div>";
+      echo'<a href="question8.php" class="btn btn-success">question suivante</a>';
     }
 
     echo'</body>
